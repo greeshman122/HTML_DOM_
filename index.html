@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>DOM Manipulation Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Node Value Assignment</title>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <div id="source">This is the source node's value.</div>
-    <div id="target">This is the target node's initial value.</div>
-
-    <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+    <h1>Assign Value from One Node to Another</h1>
+    <label for="source">Source Node: </label>
+    <input type="text" id="source" placeholder="Enter value"><br><br>
+    <label for="destination">Destination Node: </label>
+    <input type="text" id="destination" placeholder="Destination value will appear here"><br><br>
+    <button onclick="assignValue()">Assign Value</button>
 </body>
 
 </html>

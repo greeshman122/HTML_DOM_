@@ -1,17 +1,7 @@
-// External JavaScript file to manipulate the DOM
+function assignValue() {
+    // Get the value from the source node
+    let sourceValue = document.getElementById('source').value;
 
-// Function to assign the value of one node to another node
-function assignNodeValue() {
-    // Get the source node by its ID
-    var sourceNode = document.getElementById('source');
-
-    // Get the target node by its ID
-    var targetNode = document.getElementById('target');
-
-    // Assign the text content of the source node to the target node
-    targetNode.textContent = sourceNode.textContent;
+    // Assign the value to the destination node
+    document.getElementById('destination').value = sourceValue;
 }
-
-// Call the function to execute the assignment
-assignNodeValue();
-
